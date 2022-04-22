@@ -2,17 +2,14 @@
   /* position: relative;
   top: 50px; */
   height: calc(100vh);
-}
-
-.landing img {
   width: 100%;
-  height: calc(100vh);
   object-fit: cover;
-  object-position: 50% 60%;
+  background-size: cover;
+  background-position: 50% 60%;
 }
 
 @media screen and (max-width: 450px) {
-  .landing img {
-    object-position: 68%;
+  .landing {
+    background-position: 26%;
   }
 }

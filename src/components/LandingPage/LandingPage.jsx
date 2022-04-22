@@ -5,8 +5,7 @@ import images from '../../constants/images';
 
 function LandingPage() {
   return (
-    <div className='landing'>
-        <img src={images.test} />
+    <div className='landing' style={{ backgroundImage: `url(${images.test})` }}>
     </div>
 
   )
