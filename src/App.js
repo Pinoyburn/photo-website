@@ -10,6 +10,7 @@ function App() {
     <>
       <Navbar />
       <LandingPage />
+      <div className="divider" />
       <SneakPeek />
     </>
   );

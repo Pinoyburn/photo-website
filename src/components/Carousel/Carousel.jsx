@@ -4,7 +4,7 @@ import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from 'react-icons
 
 import './Carousel.css';
 
-function Carousel() {
+function Carousel({ category }) {
     const [current, setCurrent] = useState(0);
     const length = SliderImages.length;
 
@@ -18,15 +18,21 @@ function Carousel() {
 
   return (
     <div className='carousel'>
-        <IoIosArrowDropleftCircle onClick={prevSlide} className='left-arrow'/>
-        <IoIosArrowDroprightCircle onClick={nextSlide} className='right-arrow' />
-        {SliderImages.map((img, index) => {
-            return (
-                <div className={index === current ? "slide-active" : "slide-inactive" } key={index}>
-                    {index === current && <img src={img} alt="grad/portrait images" />}
-                </div>
-            )
-        })}
+            {SliderImages.map((img, index) => {
+                return (
+                    <div className={index === current ? "slide-active" : "slide-inactive" } key={index}>
+                        {index === current && 
+                        
+                        <figure className='image-card' category={category}>
+                            <img src={img} alt="grad/portrait images" />
+                            <IoIosArrowDropleftCircle onClick={prevSlide} className='left-arrow' />
+                            <IoIosArrowDroprightCircle onClick={nextSlide} className='right-arrow' />
+                        </figure>
+                        
+                        }
+                    </div>
+                )
+            })}
     </div>
   )
 }

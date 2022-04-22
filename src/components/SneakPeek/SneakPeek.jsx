@@ -5,9 +5,10 @@ import './SneakPeek.css';
 
 function SneakPeek() {
   return (
-    <>
-        <Carousel />
-    </>
+    <section className='sneak-peek'>
+        <Carousel category='Graduation' />
+        <Carousel category='Portraits' />
+    </section>
   )
 }
 
