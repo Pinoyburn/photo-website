@@ -4,7 +4,7 @@ import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from 'react-icons
 
 import './Carousel.css';
 
-function Carousel({ category }) {
+function Carousel({ category, text }) {
     const [current, setCurrent] = useState(0);
     const length = SliderImages.length;
 
@@ -33,6 +33,9 @@ function Carousel({ category }) {
                     </div>
                 )
             })}
+            <div className='carousel-text'>
+                <h2>{text}</h2>
+            </div>
     </div>
   )
 }
