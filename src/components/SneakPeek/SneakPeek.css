@@ -1,5 +1,16 @@
 .sneak-peek {
-  height: 100vh;
+  height: 800px;
   display: flex;
   background: linear-gradient(45deg, #8f9faf, #e9c6b2);
+}
+
+.carousel-fade {
+  opacity: 0;
+  transform: translateY(8%);
+}
+
+.carousel-appear {
+  transform: translateY(0px);
+  transition: transform 500ms ease-out, opacity 700ms ease-out;
+  opacity: 1;
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import images from '../../constants/images';
+import { SliderImages } from '../../constants/SliderImages';
 
 import './EditSlider.css';
 
@@ -16,15 +16,20 @@ function EditSlider() {
   }
 
   return (
-    <div className='container' style={{ width: `${edge}px` }} onMouseDown={() => setDragging(true)} onMouseUp={() => setDragging(false)} onMouseLeave={() => setDragging(false)} onMouseMove={handleMouseDown}>
-        <div className='bottom-image'>
-            <img src={images.laJollaNight} />
-        </div>
-        <div className='edit-slider-divider' style={ offsetX < edge ? { transform: `translate(${offsetX}px, 0)` } : { transform: `translate(${edge - 10}px, 0)` }} />
-        <div className='top-image' style={{ clipPath: `polygon(${offsetX + 2}px 0, 100% 0, 100% 100%, ${offsetX + 2}px 100%)` }} >
-            <img onLoad={() => setEdge(document.querySelector('.top-image').clientWidth)}  src={images.pinkSunset} />
-        </div>
-    </div>
+    <section className='edit-slider-section-container'>
+      <div className='edit-slider-container' style={{ width: `${edge}px` }} onMouseDown={() => setDragging(true)} onMouseUp={() => setDragging(false)} onMouseLeave={() => setDragging(false)} onMouseMove={handleMouseDown}>
+          <div className='bottom-image'>
+              <img src={SliderImages[0]} />
+          </div>
+          <div className='edit-slider-divider' style={ offsetX < edge ? { transform: `translate(${offsetX}px, 0)` } : { transform: `translate(${edge - 10}px, 0)` }} />
+          <div className='top-image' style={{ clipPath: `polygon(${offsetX + 2}px 0, 100% 0, 100% 100%, ${offsetX + 2}px 100%)` }} >
+              <img onLoad={() => setEdge(document.querySelector('.top-image').clientWidth)}  src={SliderImages[1]} />
+          </div>
+      </div>
+      <div className='edit-slider-text'>
+
+      </div>
+    </section>
   )
 }
 

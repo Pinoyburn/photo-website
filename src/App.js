@@ -11,7 +11,10 @@ function App() {
     <>
       <Navbar />
       <LandingPage />
-      <div className="divider" />
+      <div className="divider">
+        <h1>In dedication to the beauty around us.</h1>
+      </div>
+      {/* MAKE THE ABOVE HAVE A TYPEWRITE EFFECT */}
       <SneakPeek />
       <EditSlider />
     </>
