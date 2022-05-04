@@ -11,11 +11,9 @@ const carouselOptions = {
 const carouselObserver = new IntersectionObserver(function(entries, carouselObserver) {
   entries.forEach(entry => {
     if (!entry.isIntersecting) {
-      console.log('test');
       return;
     } else {
       entry.target.classList.add("carousel-appear");
-      console.log(entry);
       carouselObserver.unobserve(entry.target);
     }
   })
@@ -25,7 +23,6 @@ function SneakPeek() {
   
 useEffect(() => {
   const carouselFaders = document.querySelectorAll(".carousel-fade");
-  console.log(carouselFaders);
   carouselFaders.forEach(fader => {
     carouselObserver.observe(fader);
   })

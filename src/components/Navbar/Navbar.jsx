@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Navbar() {
   return (
     <div className="navbar">
-      <div className="icon">Deondre Shoots Photography</div>
+      <div className="icon name">Deondre Shoots</div>
       <ul className="list-links">
         <li>
           <Link to='/'>Home</Link>
@@ -27,6 +27,7 @@ function Navbar() {
           <Link to="/aboutme">About Me</Link>
         </li>
       </ul>
+      <div className="icon photography">Photography</div>
     </div>
   );
 }

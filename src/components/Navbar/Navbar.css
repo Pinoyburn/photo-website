@@ -1,19 +1,21 @@
 .navbar {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0);
   width: 100%;
-  height: 50px;
+  height: 80px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 1.5rem;
   position: fixed;
   z-index: 10;
+  top: 3%;
 }
 
 .icon {
-  background-color: aquamarine;
-  padding: 0.5rem;
-  border-radius: 10px;
+  display: none; /* change when I pass landing page */
+  color: rgba(255, 217, 0, 0.774);
+  font-size: 1.2rem;
 }
 
 .list-links {
@@ -23,15 +25,22 @@
 .list-links > li {
   list-style: none;
   margin: 0 1rem;
+  transition: transform 250ms ease;
 }
 
 .list-links > li > a {
   text-decoration: none;
-  color: white;
-  font-size: 1.1rem;
+  color: black;
+  font-size: 1.5rem;
 }
 
 .list-links > li > a:hover {
-  color: gray;
-  border-bottom: 2px solid gray;
+  color: white;
+  transition: color 50ms ease;
+  border-bottom: 2px solid white;
+}
+
+.list-links > li:hover {
+  transition: transform 250ms ease;
+  transform: scale(1.15);
 }
