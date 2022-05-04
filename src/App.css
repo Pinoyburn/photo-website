@@ -1,13 +1,4 @@
-.filler {
-  height: 1000px;
-}
-
-.divider {
-  height: 50px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: rgba(255, 255, 255, 0.938);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.page-content {
+  position: relative;
+  top: 50px;
 }

@@ -1,28 +1,30 @@
 import React from "react";
 import "./Navbar.css";
 
+import { Link } from 'react-router-dom';
+
 function Navbar() {
   return (
     <div className="navbar">
       <div className="icon">Deondre Shoots Photography</div>
       <ul className="list-links">
         <li>
-          <a href="/">Home</a>
+          <Link to='/'>Home</Link>
         </li>
         <li>
-          <a href="/">Graduation</a>
+          <Link to="/graduation">Graduation</Link>
         </li>
         <li>
-          <a href="/">Portraits</a>
+          <Link to="/portraits">Portraits</Link>
         </li>
         <li>
-          <a href="/">Landscapes</a>
+          <Link to="/landscapes">Landscapes</Link>
         </li>
         <li>
-          <a href="/">Contact</a>
+          <Link to="/contact">Contact</Link>
         </li>
         <li>
-          <a href="/">About Me</a>
+          <Link to="/aboutme">About Me</Link>
         </li>
       </ul>
     </div>

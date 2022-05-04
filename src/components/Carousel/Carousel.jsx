@@ -24,7 +24,7 @@ function Carousel({ category, text, position }) {
                     <div className={index === current ? "slide-active" : "slide-inactive" } key={index}>
                         {index === current && 
                         
-                        <figure className='image-card' style={ position === 'left' ? {margin: '3rem 1.2rem 0 auto'} : {margin: '3rem auto 0 1.2rem'} } category={category}>
+                        <figure className='image-card' style={ position === 'left' ? {margin: '3rem 1.2rem 0 auto'} : {margin: '3rem auto 0 0'} } category={category}>
                             <img src={img} alt="grad/portrait images" />
                             <IoIosArrowDropleftCircle onClick={prevSlide} className='left-arrow' />
                             <IoIosArrowDroprightCircle onClick={nextSlide} className='right-arrow' />
@@ -34,7 +34,7 @@ function Carousel({ category, text, position }) {
                     </div>
                 )
             })}
-            <div className='carousel-text' style={ position === 'left' ? {margin: '0 1.2rem 0 auto'} : {margin: '0 auto 0 1.2rem'} }>
+            <div className='carousel-text' style={ position === 'left' ? {margin: '0 1.2rem 0 auto'} : {margin: '0 auto 0 0'} }>
                 <h2>{text}</h2>
             </div>
     </div>

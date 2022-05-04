@@ -38,7 +38,7 @@ useEffect(() => {
   return (
     <section className='sneak-peek'>
       <div className='carousel-fade' >
-        <Carousel text='Test: Take your grad pics!' position='left' category='Graduation' />
+        <Carousel text='You only graduate once!' position='left' category='Graduation' />
       </div>
       <div className='carousel-fade'>
         <Carousel text='Test: Take your portrait pics!' position='right' category='Portraits' />

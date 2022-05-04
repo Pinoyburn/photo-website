@@ -1,7 +1,9 @@
 .sneak-peek {
   height: 800px;
   display: flex;
-  background: linear-gradient(45deg, #8f9faf, #e9c6b2);
+  justify-content: center;
+  /* background-color: #171717; */
+  background-color: black;
 }
 
 .carousel-fade {

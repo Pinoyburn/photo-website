@@ -1,8 +1,9 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
-import LandingPage from "./components/LandingPage/LandingPage";
-import SneakPeek from "./components/SneakPeek/SneakPeek";
-import EditSlider from "./components/EditSlider/EditSlider";
+import { Router, Routes, Route, Link } from "react-router-dom";
+
+import Home from "./container/Home/Home.jsx";
+import Graduation from "./container/Graduation/Graduation.jsx";
 
 import "./App.css";
 
@@ -10,13 +11,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <LandingPage />
-      <div className="divider">
-        <h1>In dedication to the beauty around us.</h1>
+      <div className="page-content">
+        <Routes>
+          <Route path="/" element={<Home />} exact />
+          <Route path="/graduation" element={<Graduation />} />
+        </Routes>
       </div>
-      {/* MAKE THE ABOVE HAVE A TYPEWRITE EFFECT */}
-      <SneakPeek />
-      <EditSlider />
     </>
   );
 }

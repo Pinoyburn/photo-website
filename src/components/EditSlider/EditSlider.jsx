@@ -21,7 +21,7 @@ function EditSlider() {
           <div className='bottom-image'>
               <img src={SliderImages[0]} />
           </div>
-          <div className='edit-slider-divider' style={ offsetX < edge ? { transform: `translate(${offsetX}px, 0)` } : { transform: `translate(${edge - 10}px, 0)` }} />
+          <div className='edit-slider-divider' style={ offsetX < edge - 15 ? { transform: `translate(${offsetX}px, 0)` } : { transform: `translate(${edge - 15}px, 0)` }} />
           <div className='top-image' style={{ clipPath: `polygon(${offsetX + 2}px 0, 100% 0, 100% 100%, ${offsetX + 2}px 100%)` }} >
               <img onLoad={() => setEdge(document.querySelector('.top-image').clientWidth)}  src={SliderImages[1]} />
           </div>
