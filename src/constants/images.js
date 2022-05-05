@@ -1,9 +1,5 @@
-import test from "../assets/test.jpg";
-import laJollaNight from "../assets/lajollanight.jpg";
-import pinkSunset from "../assets/pinksunset.jpg";
+import hero from "../assets/hero.JPG";
 
 export default {
-  test,
-  laJollaNight,
-  pinkSunset,
+  hero,
 };
