@@ -12,6 +12,8 @@
   background-color: green;
   height: 80%;
   width: 60%;
+
+  opacity: 0;
 }
 
 .edit-slider-container {
@@ -26,6 +28,15 @@
   border: 2px solid white;
   border-radius: 80px;
   overflow: hidden;
+
+  /* testing of custom hook useIntersectionObserver */
+  opacity: 0;
+}
+
+/* testing of custom hook useIntersectionObserver */
+.edit-slider-appear {
+  opacity: 1;
+  transition: opacity 1000ms ease;
 }
 
 .edit-slider-container img {

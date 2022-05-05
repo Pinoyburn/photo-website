@@ -1,13 +1,30 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+
+import useIntersectionObserver from '../../customHooks/useIntersectionObserver';
 
 import { SliderImages } from '../../constants/SliderImages';
 
 import './EditSlider.css';
 
+
+  // options for custom hook
+  const editSliderOptions = {
+    threshhold: 0.5,
+    rootMargin: '0px 0px 0px 0px'
+  };
+
+  const editSliderTextOptions = {
+    threshhold: 0.5,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
 function EditSlider() {
   const [offsetX, setOffsetX] = useState(0);
   const [dragging, setDragging] = useState(false);
   const [edge, setEdge] = useState(0);
+  useIntersectionObserver('.edit-slider-container', 'edit-slider-appear', editSliderOptions);
+  useIntersectionObserver('.edit-slider-text', 'edit-slider-appear', editSliderTextOptions);
+
 
   const handleMouseDown = (e) => {
       if (dragging) {
@@ -27,10 +44,10 @@ function EditSlider() {
           </div>
       </div>
       <div className='edit-slider-text'>
-
+        <h1>Test: Hello World</h1>
       </div>
     </section>
   )
 }
 
-export default EditSlider
+export default EditSlider;
