@@ -1,10 +1,8 @@
 .edit-slider-section-container {
   display: flex;
-  height: 100vh;
+  height: 1000px;
   padding: 50px 0 50px 0;
-  /* background-color: #171717; */
-  background-color: black;
-  /* background-color: blue; */
+  background-color: beige;
   align-items: center;
 }
 
@@ -17,7 +15,6 @@
 }
 
 .edit-slider-container {
-  /* height: 80%; */
   height: 500px;
   width: 400px;
   display: flex;
@@ -29,7 +26,6 @@
   border-radius: 80px;
   overflow: hidden;
 
-  /* testing of custom hook useIntersectionObserver */
   opacity: 0;
 }
 

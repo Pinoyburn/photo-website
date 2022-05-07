@@ -1,9 +1,31 @@
 .sneak-peek {
-  height: 800px;
+  height: auto;
   display: flex;
-  justify-content: center;
-  /* background-color: #171717; */
+  flex-direction: column;
   background-color: black;
+}
+
+.carousel-left {
+  display: flex;
+  justify-content: flex-start;
+  padding: 50px 50px 50px 150px;
+  /* background-color: green; */
+  height: 700px;
+}
+
+.carousel-text {
+  color: white;
+  /* background-color: brown; */
+  margin: 0 auto;
+  /* align-self: center; */
+}
+
+.carousel-right {
+  display: flex;
+  justify-content: flex-end;
+  padding: 50px 150px 50px 50px;
+  /* background-color: red; */
+  height: 700px;
 }
 
 .carousel-fade {
