@@ -6,8 +6,8 @@
 }
 
 .carousel-background {
-  height: calc(500px * 1.2);
-  width: calc(400px * 1.2);
+  height: var(--std-img-height);
+  width: var(--std-img-width);
   /* background-color: purple; */
   background-color: var(--color-golden);
   border: 1px solid;
@@ -16,22 +16,20 @@
 
 .image-card {
   position: relative;
-  /* height: 100%; */
-  height: calc(500px * 1.2);
-  width: calc(400px * 1.2);
+  height: var(--std-img-height);
+  width: var(--std-img-width);
   text-align: center;
   box-sizing: border-box;
   border-radius: 30px;
   overflow: hidden;
   border-style: solid;
   border-color: var(--color-golden);
-  /* border-color: black; */
   border-width: 2px;
 }
 
 .image-card img {
-  height: 100%;
-  width: 100%;
+  height: var(--std-img-height);
+  width: var(--std-img-width);
   object-fit: cover;
   cursor: pointer;
   overflow: hidden;
@@ -43,7 +41,6 @@
 }
 
 .image-card img:hover {
-  /* opacity: 0.8; */
   transform: scale(1.05);
   transition: transform 250ms ease;
 }

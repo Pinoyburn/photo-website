@@ -1,51 +1,54 @@
 .edit-slider-section-container {
-  display: flex;
   height: 1000px;
-  padding: 50px 0 50px 0;
-  background-color: beige;
+  margin-top: 90px;
   align-items: center;
 }
 
-.edit-slider-text {
-  background-color: green;
-  height: 80%;
-  width: 60%;
+.edit-slider-header {
+  /* color: var(--color-golden); */
+  color: #eeeeee;
+  /* background-color: green; */
+  text-align: center;
+  font-size: 3rem;
+}
 
-  opacity: 0;
+/* editing slider section; look below for text section */
+
+.edit-slider-content-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  /* background-color: red; */
 }
 
 .edit-slider-container {
-  height: 500px;
-  width: 400px;
+  height: var(--std-img-height);
+  width: var(--std-img-width);
+  min-width: var(--std-img-width);
   display: flex;
-  margin: 20px;
   position: relative;
   user-select: none;
-  background-color: red;
-  border: 2px solid white;
-  border-radius: 80px;
+  border: 3px solid var(--color-golden);
+  border-radius: 30px;
   overflow: hidden;
+  margin-right: 5%;
 
   opacity: 0;
 }
 
-/* testing of custom hook useIntersectionObserver */
 .edit-slider-appear {
   opacity: 1;
   transition: opacity 1000ms ease;
 }
 
 .edit-slider-container img {
-  height: 100%;
-  border: 2px solid white;
-  border-radius: 80px;
+  height: var(--std-img-height);
+  width: var(--std-img-width);
+  user-select: none;
 }
 
 .bottom-image {
   z-index: 1;
-  /* height: 90%; */
-  height: 500px;
-  width: 400px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -54,23 +57,53 @@
 
 .top-image {
   z-index: 5;
-  /* height: 90%; */
-  height: 500px;
-  width: 400px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+/* edit slider bar */
+
 .edit-slider-divider {
   z-index: 10;
-  /* height: 90%; */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 500px;
-  width: 15px;
-  background-color: white;
+  height: var(--std-img-height);
+  width: 5px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+.edit-slider-divider-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
   border: 2px solid black;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.edit-slider-divider-circle * {
+  font-size: 100px;
+  color: #ebad11;
+}
+
+/* text section */
+
+.edit-slider-text {
+  /* background-color: green; */
+  color: var(--color-golden);
+  text-align: center;
+  align-self: center;
+  max-width: 30%;
+}
+
+.edit-slider-text > h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
 }

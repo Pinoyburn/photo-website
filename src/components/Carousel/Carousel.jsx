@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 import  { SliderImages } from '../../constants/SliderImages';
 import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from 'react-icons/io';
 
+import { Link } from 'react-router-dom';
+
 import './Carousel.css';
 
-function Carousel({ category, position }) {
+function Carousel({ category, position, link }) {
     const [current, setCurrent] = useState(0);
     const length = SliderImages.length;
 
@@ -26,7 +28,9 @@ function Carousel({ category, position }) {
                             {index === current &&
                 
                             <figure className='image-card' style={ position === 'left' ? { transform: 'translate(-5%, -5%)' } : { transform: 'translate(5%, -5%)' } } category={category}>
-                                <img src={img} alt="grad/portrait images" />
+                                <Link to={link}>
+                                    <img src={img} alt="grad/portrait images" />
+                                </Link>
                                 <IoIosArrowDropleftCircle onClick={prevSlide} className='left-arrow' />
                                 <IoIosArrowDroprightCircle onClick={nextSlide} className='right-arrow' />
                             </figure>
