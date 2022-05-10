@@ -17,13 +17,8 @@ export default function useIntersectionObserver( nodeRef, className, customOptio
         })
     }, customOptions);
 
-    console.log(nodeRef);
-    console.log(className);
-
     useEffect(() => {
         const DOMRef = document.querySelectorAll(nodeRef);
-        
-        console.log(DOMRef);
         DOMRef.forEach(fader => {
             customObserver.observe(fader);
         })

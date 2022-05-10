@@ -5,6 +5,7 @@ import EditSlider from "../../components/EditSlider/EditSlider";
 
 import './Home.css';
 
+
 function Home() {
   return (
     <section>
