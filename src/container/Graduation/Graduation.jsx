@@ -1,10 +1,13 @@
 import React from 'react';
+import Gallery from '../../components/Gallery/Gallery.jsx';
 
 import './Graduation.css';
 
 function Graduation() {
   return (
-    <div><p>Hello World</p></div>
+    <section className='grad-gallery'>
+      <Gallery photoCategory='graduation' />
+    </section>
   )
 }
 

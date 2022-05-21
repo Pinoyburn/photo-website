@@ -11,18 +11,12 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
-  border-bottom: 2px solid black;
+  /* border-bottom: 2px solid black; */
 
   /* initial custom property states for intersection observer */
   --navbar-text: black;
   --navbar-text-hover: white;
   --navbar-icon: black;
-}
-
-.icon-name {
-  color: var(--navbar-icon);
-  font-size: 1.2rem;
-  margin-right: 13%;
 }
 
 .list-links {

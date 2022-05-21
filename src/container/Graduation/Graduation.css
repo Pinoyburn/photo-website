@@ -1,3 +1,4 @@
-p {
-  color: white;
+.grad-gallery {
+  position: relative;
+  top: 60px;
 }

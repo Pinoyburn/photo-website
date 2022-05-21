@@ -11,7 +11,7 @@ function Home() {
     <section>
         <LandingPage />
         <div className="divider">
-          <h2>[because you'll always wish you had more photos]</h2>
+          <h2>[ for those unsatisfied with living life just once ]</h2>
         </div>
         {/* MAKE THE ABOVE HAVE A TYPEWRITE EFFECT */}
         <SneakPeek />

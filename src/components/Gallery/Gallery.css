@@ -1,0 +1,21 @@
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  /* grid-template-columns: 400px 400px 400px; */
+  justify-content: center;
+  /* grid-gap: 10px; */
+  gap: 10px;
+}
+
+.image-container {
+  height: 500px;
+  width: 400px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image-container img {
+  height: 100%;
+  width: 100%;
+}

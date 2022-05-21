@@ -16,7 +16,7 @@ function Navbar() {
     entries.forEach(entry => {
       if (!entry.isIntersecting) {
         document.querySelector('.navbar').classList.add('navbar-transition');
-        navObserver.unobvserve(entry.target);
+        navObserver.unobserve(entry.target);
       }
   })
   }, navOptions);
@@ -33,10 +33,9 @@ function Navbar() {
   return (
     <>
       <div className="navbar">
-        <div className="icon-name">Deondre Garcia Photography</div>
         <ul className="list-links">
           <li>
-            <Link to='/'>Home</Link>
+            <Link onClick={() => setIsHome(true)} to='/'>Home</Link>
           </li>
           <li>
             <Link onClick={() => setIsHome(false)} to="/graduation">Graduation</Link>
@@ -56,7 +55,7 @@ function Navbar() {
         </ul>
       </div>
       {/* nav border is a check for intersection observer for the navbar */}
-      <div className='nav-border' style={ isHome ? {top: '50%'} : {top: '10px'}}/>
+      <div className='nav-border' style={ isHome ? {top: '30%'} : {top: '10px'}}/>
     </>
   );
 }

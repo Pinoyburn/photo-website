@@ -4,7 +4,7 @@ import useIntersectionObserver from '../../customHooks/useIntersectionObserver';
 
 import { RiArrowLeftSFill, RiArrowRightSFill } from 'react-icons/ri';
 
-import { SliderImages } from '../../constants/SliderImages';
+import { EditSliderImages } from '../../constants/EditSliderImages';
 
 import './EditSlider.css';
 import { calculateNewValue } from '@testing-library/user-event/dist/utils';
@@ -38,7 +38,7 @@ function EditSlider() {
       <div className="edit-slider-content-wrapper">
         <div className='edit-slider-container' style={{ width: `${edge}px` }} onMouseDown={() => setDragging(true)} onMouseUp={() => setDragging(false)} onMouseLeave={() => setDragging(false)} onMouseMove={handleMouseDown}>
             <div className='bottom-image'>
-                <img draggable='false' src={SliderImages[0]} />
+                <img draggable='false' src={EditSliderImages[0]} />
             </div>
 
             {/* slider bar */}
@@ -50,7 +50,7 @@ function EditSlider() {
             </figure>
             
             <div className='top-image' style={{ clipPath: `polygon(${offsetX + 4}px 0, 100% 0, 100% 100%, ${offsetX + 4}px 100%)` }} >
-                <img onLoad={() => setEdge(document.querySelector('.top-image').clientWidth)}  src={SliderImages[1]} />
+                <img onLoad={() => setEdge(document.querySelector('.top-image').clientWidth)}  src={EditSliderImages[1]} />
             </div>
         </div>
         <div className='edit-slider-text'>
