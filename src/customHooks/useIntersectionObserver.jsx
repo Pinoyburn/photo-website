@@ -12,7 +12,7 @@ export default function useIntersectionObserver( nodeRef, className, customOptio
                 return;
             } else {
                 entry.target.classList.add(className);
-                customObserver.unobvserve(entry.target);
+                customObserver.unobserve(entry.target);
             }
         })
     }, customOptions);

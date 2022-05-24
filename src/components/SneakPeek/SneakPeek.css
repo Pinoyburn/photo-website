@@ -15,9 +15,12 @@
 
 .carousel-text {
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* background-color: brown; */
   margin: 0 auto;
-  /* align-self: center; */
 }
 
 .carousel-right {

@@ -28,6 +28,12 @@ function EditSlider() {
           setOffsetX(e.screenX - e.currentTarget.getBoundingClientRect().left);
       }
   }
+ // edit slider functionality for mobile "tap" devices
+  const handleTouchDown = (e) => {
+    if (dragging) {
+      setOffsetX(e.touches[0].clientX- e.currentTarget.getBoundingClientRect().left);
+    }
+  };
 
   return (
     <section className='edit-slider-section-container'>
@@ -36,7 +42,7 @@ function EditSlider() {
       </div>
 
       <div className="edit-slider-content-wrapper">
-        <div className='edit-slider-container' style={{ width: `${edge}px` }} onMouseDown={() => setDragging(true)} onMouseUp={() => setDragging(false)} onMouseLeave={() => setDragging(false)} onMouseMove={handleMouseDown}>
+        <div className='edit-slider-container' style={{ width: `${edge}px` }} onMouseDown={() => setDragging(true)} onMouseUp={() => setDragging(false)} onMouseLeave={() => setDragging(false)} onMouseMove={handleMouseDown} onTouchStart={() => setDragging(true)} onTouchEnd={() => setDragging(false)} onTouchMove={handleTouchDown}>
             <div className='bottom-image'>
                 <img draggable='false' src={EditSliderImages[0]} />
             </div>
