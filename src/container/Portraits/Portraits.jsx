@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Gallery from '../../components/Gallery/Gallery';
+
+import './Portraits.css';
 
 function Portraits() {
   return (
-    <div>Portraits</div>
+    <section className='portraits-gallery'>
+        <Gallery photoCategory='portraits'/>
+    </section>
   )
 }
 

@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { gradImages } from '../../constants/gradImages.js';
+import { landscapeImages } from '../../constants/landscapeImages.js';
+import { portraitImages } from '../../constants/portraitImages.js';
 
 import './Gallery.css';
+
 
 function Gallery({ photoCategory }) {
     const[category, setCategory] = useState([]);
@@ -9,6 +12,10 @@ function Gallery({ photoCategory }) {
     useEffect(() => {
         if (photoCategory === 'graduation') {
             setCategory(gradImages);
+        } else if (photoCategory === 'landscapes') {
+            setCategory(landscapeImages);
+        } else if (photoCategory === 'portraits') {
+            setCategory(portraitImages);
         }
 
         return () => {
