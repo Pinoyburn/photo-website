@@ -86,3 +86,17 @@
   opacity: 1;
   transition-duration: 1s;
 }
+
+@media screen and (max-width: 500px) {
+  .image-card,
+  .image-card img,
+  .carousel-background {
+    height: 400px;
+    width: 320px;
+  }
+  .carousel-background {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

@@ -24,7 +24,7 @@
 .edit-slider-container {
   height: var(--std-img-height);
   width: var(--std-img-width);
-  min-width: var(--std-img-width);
+  /* min-width: var(--std-img-width); */
   display: flex;
   position: relative;
   user-select: none;
@@ -106,4 +106,25 @@
 .edit-slider-text > h1 {
   font-size: 4rem;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .edit-slider-content-wrapper {
+    flex-direction: column;
+  }
+  .edit-slider-container,
+  .edit-slider-container img,
+  .edit-slider-divider {
+    height: 400px;
+  }
+  .edit-slider-container,
+  .edit-slider-container img {
+    width: 320px;
+  }
+  .edit-slider-container {
+    margin: 0 auto;
+  }
+  .edit-slider-text {
+    max-width: 100%;
+  }
 }

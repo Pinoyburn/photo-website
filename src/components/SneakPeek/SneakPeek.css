@@ -5,7 +5,7 @@
   background-color: black;
 }
 
-.carousel-left {
+.carousel-top {
   display: flex;
   justify-content: flex-start;
   padding: 50px 50px 50px 150px;
@@ -19,11 +19,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: brown; */
+  background-color: brown;
   margin: 0 auto;
+  width: 100%;
 }
 
-.carousel-right {
+.carousel-bottom {
   display: flex;
   justify-content: flex-end;
   padding: 50px 150px 50px 50px;
@@ -40,4 +41,20 @@
   transform: translateY(0px);
   transition: transform 500ms ease-out, opacity 700ms ease-out;
   opacity: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .carousel-top,
+  .carousel-bottom {
+    flex-direction: column;
+    padding: 0;
+    height: auto;
+  }
+  .carousel-top {
+    flex-direction: column-reverse;
+    margin-bottom: 10%;
+  }
+  .carousel-text {
+    margin-bottom: 8%;
+  }
 }

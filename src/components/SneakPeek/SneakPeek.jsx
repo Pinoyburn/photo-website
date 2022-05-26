@@ -35,7 +35,7 @@ useEffect(() => {
   return (
     <section className='sneak-peek'>
       {/* Carousel left container */}
-      <div className="carousel-left">
+      <div className="carousel-top">
         <div className='carousel-fade' >
           <Carousel link='graduation' text='You only graduate once!' position='left' category='Graduation' />
         </div>
@@ -46,7 +46,7 @@ useEffect(() => {
       </div>
 
       {/* Carousel right container */}
-      <div className="carousel-right">
+      <div className="carousel-bottom">
         <div className="carousel-text">
           <h2>Portraits</h2>
           <p>Looking to spruce up your LinkedIn page, or show off your new hair on Instagram?</p>

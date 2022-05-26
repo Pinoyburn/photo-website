@@ -10,12 +10,23 @@
   --std-img-width: calc(400px * 1.2);
 }
 
+/* media query breakpoints: 2000px, 1200px, 1000px, 500px */
+/* have only implemented 500px breakpoints */
+
+/* 500px: height = 500 * 0.8 */
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+/* html,
+body {
+  overflow-x: hidden;
+} */
+
 body {
   background-color: black;
+  /* position: relative; */
 }
