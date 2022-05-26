@@ -63,10 +63,12 @@ function Navbar() {
       
       {/* second navbar class for mobile device breakpoint */}
       <div className="navbar-small">
-      <GiHamburgerMenu className="overlay-open" style={toggleMenu ? {display: 'none'} : {display: 'flex'} }color='#fff' fontSize={27} onClick={() => setToggleMenu(true)}/>
+        <div className="mobile-header">
+          <GiHamburgerMenu className="overlay-open" style={toggleMenu ? {display: 'none'} : {display: 'flex'} } fontSize={27} onClick={() => setToggleMenu(true)}/>
+          <RiCloseCircleFill className='overlay-close' style={toggleMenu ? {display: 'flex'} : {display: 'none'} } fontSize={27} onClick={() => setToggleMenu(false)}/>
+        </div>
         {toggleMenu && (
             <div className="navbar-small-overlay">
-              <RiCloseCircleFill className='overlay-close' color='#fff' onClick={() => setToggleMenu(false)}/>
               <ul className="list-links-small">
                 <li>
                   <Link onClick={() => setIsHome(true)} onClick={() => setToggleMenu(false)} to='/'>Home</Link>
