@@ -1,9 +1,7 @@
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(3, 400px);
-  /* grid-template-columns: 400px 400px 400px; */
   justify-content: center;
-  /* grid-gap: 10px; */
   gap: 10px;
 }
 
@@ -13,6 +11,11 @@
   border: 2px solid transparent;
   border-radius: 10px;
   overflow: hidden;
+  transform: translateY(20%);
+}
+/* randomize */
+.slide-up {
+  transform: translateY(0);
 }
 
 .image-container img {

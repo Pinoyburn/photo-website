@@ -1,5 +1,7 @@
 .edit-slider-section-container {
-  height: 1000px;
+  /* height: 1000px; */
+  height: auto;
+  margin-bottom: 100px;
   margin-top: 90px;
   align-items: center;
 }
