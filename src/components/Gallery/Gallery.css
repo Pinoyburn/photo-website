@@ -11,14 +11,6 @@
   border: 2px solid transparent;
   border-radius: 10px;
   overflow: hidden;
-  /* transform: translateY(20%);
-  transition: transform 1000ms ease; */
-}
-
-/* class for implementing slide up on load */
-.slide-up {
-  transform: translateY(0);
-  transition-timing-function: ease-out;
 }
 
 .image-container img {
@@ -29,8 +21,10 @@
 @keyframes slide-up {
   0% {
     transform: translateY(40%);
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }

@@ -9,7 +9,6 @@ import './Gallery.css';
 function Gallery({ photoCategory }) {
     const[category, setCategory] = useState([]);
     const timer = useRef(1000);
-    const renderFlag = useRef(false);
 
 
     useEffect(() => {
