@@ -8,6 +8,9 @@ import './Gallery.css';
 
 function Gallery({ photoCategory }) {
     const[category, setCategory] = useState([]);
+    const timer = useRef(1000);
+    const renderFlag = useRef(false);
+
 
     useEffect(() => {
         if (photoCategory === 'graduation') {
@@ -17,12 +20,6 @@ function Gallery({ photoCategory }) {
         } else if (photoCategory === 'portraits') {
             setCategory(portraitImages);
         }
-
-        const imageSelect = document.querySelectorAll(".image-container");
-        console.log(imageSelect);
-        imageSelect.forEach((entry) => {
-            entry.classList.add('slide-up');
-        })
 
         return () => {
 
@@ -34,9 +31,9 @@ function Gallery({ photoCategory }) {
   return (
     <div className='gallery-container'>
         {category.map((img, index) => {
-            const numberTest = Math.floor((Math.random() * 2) + 1);
+            timer.current = timer.current + 200;
             return (
-                <div className='image-container' style={{ transition: `transform ${numberTest}s ease` }}key={index}>
+                <div className='image-container' style={{ animation: `slide-up ${timer.current}ms ease` }} key={index} >
                     <img src={img} alt='gallery-image' />
                 </div>
             )

@@ -11,14 +11,26 @@
   border: 2px solid transparent;
   border-radius: 10px;
   overflow: hidden;
-  transform: translateY(20%);
+  /* transform: translateY(20%);
+  transition: transform 1000ms ease; */
 }
-/* randomize */
+
+/* class for implementing slide up on load */
 .slide-up {
   transform: translateY(0);
+  transition-timing-function: ease-out;
 }
 
 .image-container img {
   height: 100%;
   width: 100%;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(40%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
