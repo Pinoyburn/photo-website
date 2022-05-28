@@ -3,6 +3,7 @@
   grid-template-columns: repeat(3, 400px);
   justify-content: center;
   gap: 10px;
+  margin-bottom: 100px;
 }
 
 .gallery-header {

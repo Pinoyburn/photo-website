@@ -1,0 +1,67 @@
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--text-white);
+  padding-top: 100px;
+}
+
+.contact-text {
+  height: auto;
+  width: 30%;
+  border: 2px solid var(--color-golden);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.contact-text h1 {
+  font-size: 3rem;
+}
+
+.contact-ig,
+.contact-email {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--color-golden);
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-ig a {
+  color: var(--color-golden);
+  text-decoration: none;
+}
+
+.contact-email a {
+  text-decoration: none;
+  color: var(--color-golden);
+}
+
+.contact-email > p > a {
+  color: white;
+}
+
+.contact-ig p,
+.contact-email p {
+  font-size: 2rem;
+  padding-left: 10px;
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-text {
+    text-align: center;
+    width: auto;
+    margin-bottom: 10px;
+  }
+  .contact-info {
+    max-width: fit-content;
+  }
+  .contact-info p {
+    font-size: 1rem;
+  }
+}
