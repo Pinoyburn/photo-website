@@ -76,6 +76,7 @@ function Navbar() {
       {/* second navbar class for mobile device breakpoint */}
       <div className="navbar-small">
         <div className="mobile-header">
+          <h1>Deondre Garcia Photography</h1>
           <GiHamburgerMenu className="overlay-open" style={toggleMenu ? {display: 'none'} : {display: 'flex'} } fontSize={27} onClick={() => setToggleMenu(true)}/>
           <RiCloseCircleFill className='overlay-close' style={toggleMenu ? {display: 'flex'} : {display: 'none'} } fontSize={27} onClick={() => setToggleMenu(false)}/>
         </div>

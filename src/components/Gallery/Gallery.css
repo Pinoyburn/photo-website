@@ -6,7 +6,7 @@
 }
 
 .gallery-header {
-  color: white;
+  color: var(--text-white);
   text-align: center;
   padding: 20px 0;
 }

@@ -11,7 +11,7 @@ function LandingPage() {
           <h1 className='landing-text-name'>Deondre Garcia</h1>
           <h1 className='landing-text-photography'>Photography</h1>
         </div>
-        <p>For those wanting to capture the good old days <br /> while you're in them.</p>
+        <p>For those who wish to feel.</p>
       </div>
     </section>
   )

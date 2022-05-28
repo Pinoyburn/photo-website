@@ -11,7 +11,7 @@ function Home() {
     <section>
         <LandingPage />
         <div className="divider">
-          <h2>[ for those unsatisfied with living life just once ]</h2>
+          <h3>Wouldn't you like to make a moment last forever?</h3>
         </div>
         {/* MAKE THE ABOVE HAVE A TYPEWRITE EFFECT */}
         <SneakPeek />

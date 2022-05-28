@@ -42,4 +42,7 @@
   .landing {
     background-position: 26%;
   }
+  .landing-text {
+    left: 15%;
+  }
 }

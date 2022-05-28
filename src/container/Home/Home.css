@@ -2,8 +2,12 @@
   height: 50px;
   width: 100%;
   background-color: #000000e6;
-  color: rgba(255, 255, 255, 0.938);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.divider h3 {
+  color: var(--text-white);
+  font-size: 1.8rem;
 }

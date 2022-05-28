@@ -59,7 +59,7 @@ function EditSlider() {
             </div>
         </div>
         <div className='edit-slider-text'>
-          <h1>A lot.</h1>
+          <h2>A lot.</h2>
           <p>
             Editing is where photography meets creative expression. Through editing you can instill atmosphere, evoke emotions, and transcend the average filtered photograph.
           </p>
