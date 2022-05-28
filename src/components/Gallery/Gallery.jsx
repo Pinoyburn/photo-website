@@ -28,16 +28,19 @@ function Gallery({ photoCategory }) {
     
 
   return (
-    <div className='gallery-container'>
-        {category.map((img, index) => {
-            timer.current = timer.current + 200;
-            return (
-                <div className='image-container' style={{ animation: `slide-up ${timer.current}ms ease` }} key={index} >
-                    <img src={img} alt='gallery-image' />
-                </div>
-            )
-        })}
-    </div>
+    <>
+        <h1 className='gallery-header'>{photoCategory.toUpperCase()}</h1>
+        <div className='gallery-container'>
+            {category.map((img, index) => {
+                timer.current = timer.current + 200;
+                return (
+                    <div className='image-container' style={{ animation: `image-slide-up ${timer.current}ms ease` }} key={index} >
+                        <img src={img} alt='gallery-image' />
+                    </div>
+                )
+            })}
+        </div>
+    </>
   )
 }
 

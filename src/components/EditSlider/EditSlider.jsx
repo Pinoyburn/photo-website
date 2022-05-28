@@ -7,7 +7,6 @@ import { RiArrowLeftSFill, RiArrowRightSFill } from 'react-icons/ri';
 import { EditSliderImages } from '../../constants/EditSliderImages';
 
 import './EditSlider.css';
-import { calculateNewValue } from '@testing-library/user-event/dist/utils';
 
 
   // options for custom hook

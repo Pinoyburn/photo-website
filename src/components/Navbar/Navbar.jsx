@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { RiCloseCircleFill } from 'react-icons/ri';
 import "./Navbar.css";
@@ -9,6 +9,8 @@ import { Link } from 'react-router-dom';
 function Navbar() {
   const [isHome, setIsHome] = useState(true);
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  console.log(isHome);
 
   const navOptions = {
     root: null,
@@ -24,14 +26,24 @@ function Navbar() {
   })
   }, navOptions);
 
+
+
   useEffect(() => {
     const navRef = document.querySelector('.nav-border');
     navObserver.observe(navRef);
+    
+    // below sections of commented code (2 sections) were an attempt to maintain state through refresh. Come back later to finish.
+
+    // if (!isHome) {
+    //   window.addEventListener("beforeunload", setIsHome(false));
+    //   console.log("event listener firing test");
+    // }
 
     return () => {
       navObserver.disconnect()
+      // window.removeEventListener("beforeunload", setIsHome(false));
     }
-  })
+  }, [])
 
   return (
     <>
@@ -71,22 +83,40 @@ function Navbar() {
             <div className="navbar-small-overlay">
               <ul className="list-links-small">
                 <li>
-                  <Link onClick={() => setIsHome(true)} onClick={() => setToggleMenu(false)} to='/'>Home</Link>
+                  <Link onClick={() => {
+                    setIsHome(true);
+                    setToggleMenu(false);
+                    }}  to='/'>Home</Link>
                 </li>
                 <li>
-                  <Link onClick={() => setIsHome(false)} onClick={() => setToggleMenu(false)} to="/graduation">Graduation</Link>
+                  <Link onClick={() => {
+                    setIsHome(false);
+                    setToggleMenu(false);
+                    }}  to="/graduation">Graduation</Link>
                 </li>
                 <li>
-                  <Link onClick={() => setIsHome(false)} onClick={() => setToggleMenu(false)} to="/portraits">Portraits</Link>
+                  <Link onClick={() => {
+                    setIsHome(false);
+                    setToggleMenu(false);
+                    }}  to="/portraits">Portraits</Link>
                 </li>
                 <li>
-                  <Link onClick={() => setIsHome(false)} onClick={() => setToggleMenu(false)} to="/landscapes">Landscapes</Link>
+                  <Link onClick={() => {
+                    setIsHome(false);
+                    setToggleMenu(false);
+                    }}  to="/landscapes">Landscapes</Link>
                 </li>
                 <li>
-                  <Link onClick={() => setIsHome(false)} onClick={() => setToggleMenu(false)} to="/contact">Contact</Link>
+                  <Link onClick={() => {
+                    setIsHome(false);
+                    setToggleMenu(false);
+                    }}  to="/contact">Contact</Link>
                 </li>
                 <li>
-                  <Link onClick={() => setIsHome(false)} onClick={() => setToggleMenu(false)} to="/aboutme">About Me</Link>
+                  <Link onClick={() => {
+                    setIsHome(false);
+                    setToggleMenu(false);
+                    }}  to="/aboutme">About Me</Link>
                 </li>
               </ul>
             </div>
