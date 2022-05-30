@@ -27,6 +27,10 @@
   font-size: 3rem;
 }
 
+.scroll-text p {
+  color: white;
+}
+
 @keyframes text-slide-up {
   0% {
     transform: translateY(30%);

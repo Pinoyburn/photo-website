@@ -65,7 +65,7 @@ function Navbar() {
             <Link onClick={() => setIsHome(false)} to="/contact">Contact</Link>
           </li>
           <li>
-            <Link onClick={() => setIsHome(false)} to="/aboutme">About Me</Link>
+            <Link onClick={() => setIsHome(false)} to="/about">About</Link>
           </li>
         </ul>
       </div>
@@ -117,7 +117,7 @@ function Navbar() {
                   <Link onClick={() => {
                     setIsHome(false);
                     setToggleMenu(false);
-                    }}  to="/aboutme">About Me</Link>
+                    }}  to="/about">About</Link>
                 </li>
               </ul>
             </div>

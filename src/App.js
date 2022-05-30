@@ -8,6 +8,7 @@ import Graduation from "./container/Graduation/Graduation.jsx";
 import Portraits from "./container/Portraits/Portraits.jsx";
 import Landscapes from "./container/Landscapes/Landscapes.jsx";
 import Contact from "./container/Contact/Contact.jsx";
+import About from "./container/About/About";
 
 import "./App.css";
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/portraits" element={<Portraits />} />
         <Route path="/landscapes" element={<Landscapes />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
     </>

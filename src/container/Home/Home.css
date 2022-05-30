@@ -7,7 +7,53 @@
   align-items: center;
 }
 
-.divider h3 {
+.divider-text-reveal {
+  --typewriter-delay: 800ms; /* setting variable here to trigger typewriter animation with intersection observer */
+  --typewriter-duration: 2000ms;
+}
+
+.divider-text {
   color: var(--text-white);
-  font-size: 1.8rem;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+/* Typewriter logic below */
+
+.divider-text::before,
+.divider-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* note that the number of steps will match the number of chars */
+.divider-text::before {
+  background-color: black;
+  animation: typewriter var(--typewriter-duration) steps(12)
+    var(--typewriter-delay) forwards;
+}
+
+.divider-text::after {
+  width: 0.125em;
+  background: var(--text-white);
+  animation: typewriter var(--typewriter-duration) steps(12)
+      var(--typewriter-delay) forwards,
+    blink 750ms steps(12) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
 }

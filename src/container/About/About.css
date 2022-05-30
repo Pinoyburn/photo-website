@@ -1,0 +1,18 @@
+.about {
+  position: relative;
+  top: 60px;
+  color: var(--text-white);
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about h1 {
+  font-size: 3rem;
+}
+
+.about p {
+  margin-top: 40px;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
