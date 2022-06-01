@@ -2,7 +2,8 @@
   --color-black: #000000e6;
   --color-golden: #ebad11a4;
   --text-white: #eee;
-  --text-golden: #ffd900c5;
+  --text-golden: #ebad11;
+  /* --text-golden: #ebad11d8; */
 
   /* image heights */
   --std-img-height: calc(
@@ -26,9 +27,9 @@ p {
   font-family: "Arial";
 }
 
-img {
+/* img {
   pointer-events: none;
-}
+} */
 
 body {
   background-color: black;

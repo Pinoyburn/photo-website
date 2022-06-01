@@ -18,10 +18,9 @@ function Home() {
   return (
     <section>
         <LandingPage />
-        <div className="divider">
-          <h3 className='divider-text'>Hello World!</h3>
+        <div id='test' className="divider">
+          <h3 className='divider-text'>photos worth looking back on</h3>
         </div>
-        {/* MAKE THE ABOVE HAVE A TYPEWRITER EFFECT */}
         <SneakPeek />
         <EditSlider />
     </section>

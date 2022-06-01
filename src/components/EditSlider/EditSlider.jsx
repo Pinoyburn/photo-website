@@ -43,7 +43,7 @@ function EditSlider() {
       <div className="edit-slider-content-wrapper">
         <div className='edit-slider-container' style={{ width: `${edge}px` }} onMouseDown={() => setDragging(true)} onMouseUp={() => setDragging(false)} onMouseLeave={() => setDragging(false)} onMouseMove={handleMouseDown} onTouchStart={() => setDragging(true)} onTouchEnd={() => setDragging(false)} onTouchMove={handleTouchDown}>
             <div className='bottom-image'>
-                <img draggable='false' src={EditSliderImages[0]} />
+                <img alt='unedited photo' draggable='false' src={EditSliderImages[0]} />
             </div>
 
             {/* slider bar */}
@@ -55,21 +55,13 @@ function EditSlider() {
             </figure>
             
             <div className='top-image' style={{ clipPath: `polygon(${offsetX + 4}px 0, 100% 0, 100% 100%, ${offsetX + 4}px 100%)` }} >
-                <img onLoad={() => setEdge(document.querySelector('.top-image').clientWidth)}  src={EditSliderImages[1]} />
+                <img alt='edited photo' onLoad={() => setEdge(document.querySelector('.top-image').clientWidth)}  src={EditSliderImages[1]} />
             </div>
         </div>
         <div className='edit-slider-text'>
           <h2>A lot.</h2>
           <p>
-            Editing is where photography meets creative expression. Through editing you can instill atmosphere, evoke emotions, and transcend the average filtered photograph.
-          </p>
-          <br />
-          <p>
-            You can take a photo only once, but edit it a million ways. 
-           </p>
-           <br />
-           <p> 
-            Ensure the photographer you choose has such a mastery of Lightroom and Photoshop to convert vision to reality.
+            Editing is where photography meets creative expression. Through editing you can instill atmosphere, evoke emotions, and go beyond the average Instagram filter.
           </p>
         </div>
       </div>

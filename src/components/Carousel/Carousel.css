@@ -1,14 +1,12 @@
 .carousel {
   height: 100%;
   user-select: none;
-  /* background-color: blue; */
   position: relative;
 }
 
 .carousel-background {
   height: var(--std-img-height);
   width: var(--std-img-width);
-  /* background-color: purple; */
   background-color: var(--color-golden);
   border: 1px solid;
   border-radius: 30px;
@@ -78,7 +76,6 @@
 }
 
 .slide-inactive {
-  /* opacity: 0.8; */
   transition: 1s ease;
 }
 

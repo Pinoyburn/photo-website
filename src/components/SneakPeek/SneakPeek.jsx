@@ -37,11 +37,13 @@ useEffect(() => {
       {/* Carousel left container */}
       <div className="carousel-top">
         <div className='carousel-fade' >
-          <Carousel link='graduation' text='You only graduate once!' position='left' category='Graduation' />
+          <Carousel link='/graduation' text='You only graduate once!' position='left' category='Graduation' />
         </div>
         <div className='carousel-text'>
           <h2>Graduation</h2>
-          <p>One day you'll look back on your graduation photos reminisce on the past; make sure you're looking back on something beautiful!</p>
+          <p>
+            Celebrate the years of hard work and sacrifices you made to get here.
+          </p>
         </div>
       </div>
 

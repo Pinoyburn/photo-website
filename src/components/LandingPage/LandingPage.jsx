@@ -11,8 +11,10 @@ function LandingPage() {
           <h1 className='landing-text-name'>Deondre Garcia</h1>
           <h1 className='landing-text-photography'>Photography</h1>
         </div>
-        <p>Because time passes, but photos don't.</p>
+        <p>Take your photos to new heights.</p>
+        <br /><br />
       </div>
+      <p className='home-scroll-text' >Scroll down for more</p>
 
       
     </section>

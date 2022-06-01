@@ -31,6 +31,18 @@
   color: white;
 }
 
+.home-scroll-text {
+  position: absolute;
+  top: 37%;
+  left: 20%;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  opacity: 0;
+  animation: fade-in 1000ms ease-out 2000ms forwards;
+}
+
 @keyframes text-slide-up {
   0% {
     transform: translateY(30%);
@@ -42,11 +54,24 @@
   }
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .landing {
     background-position: 26%;
   }
   .landing-text {
+    left: 15%;
+  }
+  .home-scroll-text {
+    top: 47%;
     left: 15%;
   }
 }

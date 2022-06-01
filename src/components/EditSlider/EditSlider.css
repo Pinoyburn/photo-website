@@ -101,13 +101,14 @@
 }
 
 .edit-slider-text h2 {
-  color: var(--color-golden);
+  color: var(--text-golden);
   font-size: 4rem;
   margin-bottom: 10px;
 }
 
 .edit-slider-text p {
   color: var(--text-white);
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 500px) {

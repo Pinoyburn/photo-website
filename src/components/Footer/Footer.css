@@ -8,3 +8,9 @@
   color: var(--text-white);
   text-align: center;
 }
+
+.contact-info {
+  text-align: center;
+  color: var(--text-white);
+  margin-bottom: 40px;
+}

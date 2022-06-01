@@ -36,9 +36,12 @@
   }
 }
 
-/* @media screen and (max-width: 1400px) {
+@media screen and (max-width: 500px) {
+  .gallery-header {
+    padding-top: 50px;
+  }
   .gallery-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 400px);
     justify-content: center;
   }
-} */
+}

@@ -9,7 +9,6 @@
   display: flex;
   justify-content: flex-start;
   padding: 50px 50px 50px 150px;
-  /* background-color: green; */
   height: 700px;
 }
 
@@ -17,17 +16,17 @@
   color: var(--text-white);
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
+  text-align: center;
   position: relative;
   top: 30%;
-  /* background-color: brown; */
   margin: 0 auto;
   width: 50%;
 }
 
 .carousel-text h2 {
-  color: var(--color-golden);
+  color: var(--text-golden);
+  font-family: "Great Vibes", cursive;
   font-size: 3.5rem;
 }
 
@@ -39,7 +38,6 @@
   display: flex;
   justify-content: flex-end;
   padding: 50px 150px 50px 50px;
-  /* background-color: red; */
   height: 700px;
 }
 
@@ -67,5 +65,8 @@
   }
   .carousel-text {
     margin-bottom: 8%;
+  }
+  .carousel-text p {
+    display: none;
   }
 }
