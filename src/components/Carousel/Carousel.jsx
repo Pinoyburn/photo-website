@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import  { SliderImages } from '../../constants/SliderImages';
+import  { portraitSliderImages } from '../../constants/portraitSliderImages';
+import  { graduationSliderImages } from '../../constants/graduationSliderImages';
 import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from 'react-icons/io';
 
 import { Link } from 'react-router-dom';
 
 import './Carousel.css';
 
-function Carousel({ category, position, link }) {
+function Carousel({ category, position, link, photoCategory }) {
     const [current, setCurrent] = useState(0);
-    const length = SliderImages.length;
+    const [photoType, setPhotoType] = useState([]);
+    const length = photoType.length;
 
     const nextSlide = () => {
         setCurrent(() => (current === length - 1 ? 0 : current + 1));
@@ -17,15 +19,19 @@ function Carousel({ category, position, link }) {
     const prevSlide = () => {
         setCurrent(() => (current === 0 ? length - 1 : current - 1));
     }
-
-
-    console.log(link);
     
+    useEffect(() => {
+        if (photoCategory === 'graduation') {
+            setPhotoType(graduationSliderImages);
+        } else if (photoCategory === 'portraits') {
+            setPhotoType(portraitSliderImages);
+        }
+    })
 
   return (
     <div className='carousel' >
             <div className="carousel-background">
-                {SliderImages.map((img, index) => {
+                {photoType.map((img, index) => {
                     return (
                         <div className={index === current ? "slide-active" : "slide-inactive" } key={index}>
                             {index === current &&

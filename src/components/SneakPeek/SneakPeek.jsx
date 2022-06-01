@@ -37,7 +37,7 @@ useEffect(() => {
       {/* Carousel left container */}
       <div className="carousel-top">
         <div className='carousel-fade' >
-          <Carousel link='/graduation' text='You only graduate once!' position='left' category='Graduation' />
+          <Carousel link='/graduation' text='You only graduate once!' position='left' photoCategory='graduation' category='Graduation' />
         </div>
         <div className='carousel-text'>
           <h2>Graduation</h2>
@@ -54,7 +54,7 @@ useEffect(() => {
           <p>Looking to spruce up your LinkedIn page, or show off your new hair on Instagram?</p>
         </div>
         <div className='carousel-fade'>
-          <Carousel link='/portraits' text='Test: Take your portrait pics!' category='Portraits' />
+          <Carousel link='/portraits' text='Test: Take your portrait pics!' photoCategory='portraits' category='Portraits' />
         </div>
       </div>
 

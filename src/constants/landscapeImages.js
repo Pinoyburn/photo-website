@@ -1,9 +1,7 @@
-import img1 from "../assets/graduation/large-1172.jpg";
-import img2 from "../assets/graduation/large-5584.jpg";
-import img3 from "../assets/graduation/large-4916.jpg";
-import img4 from "../assets/graduation/large-6339.jpg";
-import img5 from "../assets/graduation/large-2484.jpg";
-import img6 from "../assets/graduation/large-9139.jpg";
-import img7 from "../assets/graduation/large-9289.jpg";
+import img1 from "../assets/landscapes/large-1181.jpg";
+import img2 from "../assets/landscapes/large-4671.jpg";
+import img3 from "../assets/landscapes/large-9663.jpg";
+import img4 from "../assets/landscapes/large-1159.jpg";
+import img5 from "../assets/landscapes/large-7613.jpg";
 
-export const landscapeImages = [img1, img2, img3, img4, img5, img6, img7];
+export const landscapeImages = [img1, img2, img3, img4, img5];

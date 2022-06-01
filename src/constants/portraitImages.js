@@ -1,9 +1,21 @@
-import img1 from "../assets/graduation/large-1172.jpg";
-import img2 from "../assets/graduation/large-5584.jpg";
-import img3 from "../assets/graduation/large-4916.jpg";
-import img4 from "../assets/graduation/large-6339.jpg";
-import img5 from "../assets/graduation/large-2484.jpg";
-import img6 from "../assets/graduation/large-9139.jpg";
-import img7 from "../assets/graduation/large-9289.jpg";
+import img1 from "../assets/portraits/img1.JPG";
+import img2 from "../assets/portraits/img2.JPG";
+import img3 from "../assets/portraits/img3.JPG";
+import img4 from "../assets/portraits/img4.JPG";
+import img5 from "../assets/portraits/img5.JPG";
+import img6 from "../assets/portraits/img6.jpg";
+import img7 from "../assets/portraits/img7.jpg";
+import img8 from "../assets/portraits/img8.jpg";
+import img9 from "../assets/portraits/img9.jpg";
 
-export const portraitImages = [img1, img2, img3, img4, img5, img6, img7];
+export const portraitImages = [
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+];

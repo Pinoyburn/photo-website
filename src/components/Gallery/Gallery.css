@@ -36,6 +36,15 @@
   }
 }
 
+@keyframes image-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .gallery-header {
     padding-top: 50px;
