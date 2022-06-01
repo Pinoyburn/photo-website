@@ -149,6 +149,9 @@
   .navbar-small {
     display: flex;
   }
+  .mobile-header h1 {
+    font-size: 1.4rem;
+  }
   .navbar-small-overlay {
     animation: slide-in 0.5s ease;
   }

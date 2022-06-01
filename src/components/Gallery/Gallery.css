@@ -50,7 +50,22 @@
     padding-top: 50px;
   }
   .gallery-container {
-    grid-template-columns: repeat(1, 400px);
+    grid-template-columns: repeat(1, 360px);
     justify-content: center;
+  }
+  .image-container {
+    height: 450px;
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .gallery-container {
+    grid-template-columns: repeat(1, 320px);
+    justify-content: center;
+  }
+  .image-container {
+    height: 400px;
+    width: 320px;
   }
 }

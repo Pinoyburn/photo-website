@@ -57,21 +57,21 @@
   border-top-right-radius: 10px;
 }
 
-.right-arrow {
-  font-size: 3.5rem;
-  cursor: pointer;
-  position: absolute;
-  bottom: 2%;
-  right: 10%;
-  color: rgba(255, 255, 255, 0.7);
-}
-
 .left-arrow {
   font-size: 3.5rem;
   cursor: pointer;
   position: absolute;
   bottom: 2%;
   left: 10%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.right-arrow {
+  font-size: 3.5rem;
+  cursor: pointer;
+  position: absolute;
+  bottom: 2%;
+  right: 10%;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -95,5 +95,11 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .left-arrow {
+    left: 3%;
+  }
+  .right-arrow {
+    right: 3%;
   }
 }
