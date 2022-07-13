@@ -7,6 +7,11 @@
   align-items: center;
 }
 
+.anchor {
+  visibility: hidden;
+  transform: translateY(-80px);
+}
+
 .divider-text-reveal {
   --typewriter-delay: 800ms; /* setting variable here to trigger typewriter animation with intersection observer */
   --typewriter-duration: 3500ms;

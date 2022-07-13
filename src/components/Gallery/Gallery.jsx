@@ -10,14 +10,31 @@ function Gallery({ photoCategory }) {
     const[category, setCategory] = useState([]);
     const timer = useRef(1000);
 
+    // cache images for preloading -> performance improvements
+    const cacheImages = async (srcArray) => {
+        const promises = srcArray.map((src) => {
+            return new Promise(function (resolve, reject) {
+                const img = new Image();
+
+                img.src = src;
+                img.onload = resolve();
+                img.onerror = reject();
+            });
+        });
+
+        await Promise.all(promises);
+    }
 
     useEffect(() => {
         if (photoCategory === 'graduation') {
             setCategory(gradImages);
+            cacheImages(gradImages);
         } else if (photoCategory === 'landscapes') {
             setCategory(landscapeImages);
+            cacheImages(landscapeImages);
         } else if (photoCategory === 'portraits') {
             setCategory(portraitImages);
+            cacheImages(portraitImages);
         }
 
         return () => {

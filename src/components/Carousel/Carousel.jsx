@@ -19,6 +19,21 @@ function Carousel({ category, position, link, photoCategory }) {
     const prevSlide = () => {
         setCurrent(() => (current === 0 ? length - 1 : current - 1));
     }
+
+    // cache images for preloading -> performance improvements
+    const cacheImages = async (srcArray) => {
+        const promises = srcArray.map((src) => {
+            return new Promise(function (resolve, reject) {
+                const img = new Image();
+
+                img.src = src;
+                img.onload = resolve();
+                img.onerror = reject();
+            });
+        });
+
+        await Promise.all(promises);
+    }
     
     useEffect(() => {
         if (photoCategory === 'graduation') {
@@ -26,7 +41,12 @@ function Carousel({ category, position, link, photoCategory }) {
         } else if (photoCategory === 'portraits') {
             setPhotoType(portraitSliderImages);
         }
+
+        cacheImages(graduationSliderImages);
+        cacheImages(portraitSliderImages);
     })
+
+    
 
   return (
     <div className='carousel' >
