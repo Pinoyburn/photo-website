@@ -1,4 +1,4 @@
-[Live Website](https://deondregarciaphoto.netlify.app/)
+# [Live Website](https://deondregarciaphoto.netlify.app/)
 
 # Description
 This project utilized React, HTML, and CSS to build a photography portfolio website displaying photos I took myself. The goal was to learn React and leverage its state management capabilities, among other things, to deploy a smooth and visually appealing commercial website. It goes without saying that these photos are copyrighted and should not be used without my permission.
