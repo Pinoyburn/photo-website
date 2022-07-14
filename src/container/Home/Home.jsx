@@ -18,7 +18,8 @@ function Home() {
   return (
     <section>
         <LandingPage />
-        <div id='test' className="divider">
+        <div className="divider">
+          <div className='anchor' id='anchor' />
           <h3 className='divider-text'>photos worth looking back on</h3>
         </div>
         <SneakPeek />
